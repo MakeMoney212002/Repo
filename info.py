@@ -49,8 +49,8 @@ DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://Ganesh:212002@nekki.g5
 DATABASE_NAME = environ.get("DATABASE_NAME", "Nekki")
 
 # Files index database url
-FILES_DATABASE = environ.get("FILES_DATABASE", "")
-COLLECTION_NAME = environ.get("COLLECTION_NAME", "")
+FILES_DATABASE = environ.get("FILES_DATABASE", "mongodb+srv://Ganesh:212002@nekki.g5x2ufc.mongodb.net/?retryWrites=true&w=majority")
+COLLECTION_NAME = environ.get("COLLECTION_NAME", "Telegram_Files")
 
 # Other Channel's
 SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002721082872"))
