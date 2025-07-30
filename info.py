@@ -39,23 +39,23 @@ CHANNELS = [
 
 # ForceSub Channel & Log Channels
 AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "-1002721082872"))
-AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", ""))
+AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", "-1002721082872"))
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002721082872"))
-LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", ""))
-LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", ""))
+LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1002721082872"))
+LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1002721082872"))
 
 # MongoDB
 DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://Ganesh:2002@nekki.g5x2ufc.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get("DATABASE_NAME", "Nekki")
 
 # Files index database url
-FILES_DATABASE = environ.get("FILES_DATABASE", "Nekki")
-COLLECTION_NAME = environ.get("COLLECTION_NAME", "Telegram_Files")
+FILES_DATABASE = environ.get("FILES_DATABASE", "")
+COLLECTION_NAME = environ.get("COLLECTION_NAME", "")
 
 # Other Channel's
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", ""))
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002721082872"))
 DELETE_CHANNELS = int(environ.get("DELETE_CHANNELS", "0"))
-request_channel = environ.get("REQUEST_CHANNEL", "")
+request_channel = environ.get("REQUEST_CHANNEL", "-1002721082872")
 REQUEST_CHANNEL = (
     int(request_channel)
     if request_channel and id_pattern.search(request_channel)
@@ -63,22 +63,22 @@ REQUEST_CHANNEL = (
 )
 MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1002721082872"))
 # Added Link Here Not Id
-SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "")
+SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "-1002721082872")
 MOVIE_GROUP_LINK = environ.get("MOVIE_GROUP_LINK", "")
 
 # Verification
 IS_VERIFY = is_enabled("IS_VERIFY", True)
 # ---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/")
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/FHDmovies24x7")
+TUTORIAL_2 = environ.get("TUTORIAL_2", "")
+TUTORIAL_3 = environ.get("TUTORIAL_3", "")
 VERIFY_IMG = environ.get(
     "VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg"
 )
 SHORTENER_API = environ.get("SHORTENER_API", "a7d1779bd097cdf9dd9eb5044f8423350f8d326e")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "softurl.in")
 SHORTENER_API2 = environ.get(
-    "SHORTENER_API2", "3097623f852197a9ce40d1212aaa8bbf2803e799"
+    "SHORTENER_API2", ""
 )
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "")
 SHORTENER_API3 = environ.get(
