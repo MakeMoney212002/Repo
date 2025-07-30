@@ -80,7 +80,7 @@ SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "softurl.in")
 SHORTENER_API2 = environ.get(
     "SHORTENER_API2", "a7d1779bd097cdf9dd9eb5044f8423350f8d326e"
 )
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "softulrl.in")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "softurl.in")
 SHORTENER_API3 = environ.get(
     "SHORTENER_API3", "a7d1779bd097cdf9dd9eb5044f8423350f8d326e"
 )
