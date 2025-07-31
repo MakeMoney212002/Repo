@@ -172,7 +172,7 @@ if "DYNO" in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("FQDN", "https://repo-2k4e.onrender.com")
+URL = environ.get("FQDN", "repo-2k4e.onrender.com")
 
 # Commands
 admin_cmds = [
