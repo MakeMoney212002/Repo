@@ -163,7 +163,7 @@ LINK_MODE = is_enabled("LINK_MODE", True)
 TMDB_API_KEY = environ.get("TMDB_API_KEY", "")
 
 # Online Streaming And Download
-STREAM_MODE = bool(environ.get("STREAM_MODE", False))  # Set True or Flase
+STREAM_MODE = bool(environ.get("STREAM_MODE", True))  # Set True or Flase
 
 MULTI_CLIENT = False
 SLEEP_THRESHOLD = int(environ.get("SLEEP_THRESHOLD", "60"))
@@ -172,7 +172,7 @@ if "DYNO" in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("FQDN", "repo-2k4e.onrender.com")
+URL = environ.get("FQDN", "https://repo-2k4e.onrender.com")
 
 # Commands
 admin_cmds = [
